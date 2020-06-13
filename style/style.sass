@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&display=swap')
+
+$color_white: #fff
+body 
+	font-family: 'Lato', sans-serif
+	background: #181818
+	padding-bottom: 80px
+* 
+	outline: none
+	&:focus
+		outline: none
+		box-shadow: none!important
+.navbar 
+	font-family: 'Open Sans', sans-serif
+	background: #383838
+	.navbar-brand
+		position: absolute
+		font-family: 'Roboto', sans-serif
+		@media screen and (max-width: 992px)
+			position: relative
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active
+	background: #202020
+	color: $color_white 
+.nav 
+	position: relative
+	background: #202020
+	li
+		position: relative
+		&:hover 
+			&:after 
+				content: ' '
+				border-bottom: 5px solid $color_white
+				width: 100%
+				position: absolute
+				bottom: -37%
+		a
+			color: $color_white
+			&.active:after 
+				content: ' '
+				border-bottom: 5px solid $color_white
+				width: 100%
+				position: absolute
+				bottom: -37%
+				left: 0
+	.page_group_1, .page_group_2, .page_group_private_button
+		position: initial
+		transition: 1s
+		width: 50%
+		&:hover
+			&:after 
+				bottom: 0
+				width: 50%
+		a.active:after
+			bottom: 0
+			width: 50%
+	.page_group_1
+		&:hover
+			&:after 
+				left: 0
+		a.active:after
+			left: 0
+	.page_group_2, .page_group_private_button
+		&:hover
+			&:after 
+				right: 0
+		a.active:after
+			left: 50%
+.card_chard
+	margin-top: 2%
+	.box_data
+		padding-bottom: 39px
+		display: flex
+		.select_data
+			width: 40%
+			margin: 0 16px
+			@media screen and (max-width: 992px)
+				width: 59%
+			@media screen and (max-width: 768px)
+				width: 90%
+			@media screen and (max-width: 520px)
+				margin: 16px 16px
+			@media screen and (max-width: 390px)
+				margin: 16px 0
+				width: 100%
+		.send_messages 
+			margin-left: 10%
+			position: relative
+			&:before 
+				content: ' '
+				width: 20px
+				height: 20px
+				display: block
+				background: #64b5f6
+				position: absolute
+				right: 115%
+				@media screen and (max-width: 520px)
+					right: 103%
+			@media screen and (max-width: 520px)
+				margin-left: 11%
+		@media screen and (max-width: 520px)
+			display: block
+		.mt_mobile 
+			@media screen and (max-width: 992px)
+				padding-top: 58px
+	.bar_chart 
+		width: 100%
+		height: 528px
+		padding-top: 100px
+	.anychart-credits-text, .anychart-credits-logo
+		display: none
+	.box_chart_accounts, 
+	.box_chart_message, 
+	.box_chart_problems 
+		padding: 20px
+		@media screen and (max-width: 992px)
+			justify-content: center
+		@media screen and (max-width: 490px)
+			justify-content: flex-start
+	.percent_box
+		width: 47%
+		padding-left: 18%
+		@media screen and (max-width: 1200px)
+			width: 62%
+		@media screen and (max-width: 992px)
+			width: 26%
+			margin: 0 auto
+			padding-left: 6%
+		@media screen and (max-width: 450px)
+			width: 39%
+	.box_color_chart
+		position: absolute
+		top: 40%
+		right: 18%
+		@media screen and (max-width: 1200px)
+			right: 5%
+	.box_color_chart_2
+		.active_color 
+			padding-right: 22px
+	.box_color_chart_3
+		.active_color 
+			padding-right: 31px
+	.percent_box, 
+	.box_color_chart
+		.active_statistic, 
+		.banned_statistic, 
+		.active_color, 
+		.banned_color
+			position: relative
+			&:after 
+				content: ' '
+				display: block 
+				width: 20px
+				height: 20px
+				position: absolute
+				right: 20px
+				top: 10%
+		.active_statistic
+			&:after 
+				background: #73BB17
+				left: -28px
+		.active_color
+			&:after
+				background: #73BB17
+				right: 69px
+		.banned_statistic
+			&:after 
+				background: #A61440
+				left: -28px
+		.banned_color
+			&:after
+				background: #A61440
+				right: 69px
+	.percent_box_2
+		.active_statistic
+			&:after 
+				right: 40px
+		.banned_statistic
+			&:after 
+				right: 29px
+	.percent_box_3
+		.active_statistic
+			&:after 
+				right: 29px
+.card-deck
+	margin-bottom: 30px 
+	@media screen and (max-width: 992px)
+		margin-bottom: 0
+	.card 
+		@media screen and (max-width: 992px)
+			flex: 0 100%	
+			margin-bottom: 20px
+	.card-body
+		min-height: 474px
+		padding: 1.25rem 2rem
+.card_body_table
+	min-height: 334px
+	.table_text_bold
+		font-weight: bold
+		@media screen and (max-width: 576px)
+			display: flex
+			justify-content: space-between
+			th, td
+				display: block
+		th 
+			width: 25%
+			@media screen and (max-width: 576px)
+				width: 100%
+				text-align: left
+.card_dashboard
+	width: 33%
+	.table-striped tbody tr
+		color: $color_white
+		&:nth-of-type(odd) 
+			background-color: #C1C1C1
+			color: #000
+	@media screen and (max-width: 1200px)
+		width: 39%
+.card
+	border: 1px solid #303030
+	color: $color_white
+	background: #202020
+	@media screen and (max-width: 992px)
+		width: 100%
+.add_account 
+	padding-top: 20%
+	.card
+		width: 50%
+		margin: 0 auto
+		@media screen and (max-width: 992px)
+			width: 100%
+.btn_form_account 
+	border: 3px solid #4D5EF4
+	color: #4D5EF4
+	border-radius: 10px
+	width: 38%
+	margin: 0 auto
+	display: block
+	margin-top: 80px
+	transition: 1s
+	&:hover 
+		background: #3143e0
+		border-color: transparent
+		color: $color_white
+	@media screen and (max-width: 1200px)
+		width: 54%
+
+//--------------------- dashboard
+
+.current_task 
+	.row 
+		padding: 20px 0 24% 0
+		@media screen and (max-width: 992px)
+			padding: 20px 15px 4% 15px
+		.card_group_spam
+			margin-bottom: 26%
+			@media screen and (max-width: 992px)
+				margin-bottom: 5%
+			.card-body
+				flex: none
+				.group_spam
+					overflow: hidden
+					table
+						th
+							width: 38%
+							padding: 4px 4px
+						td
+							padding: 4px 4px
+					.indicator
+						width: 12px
+						height: 12px
+						background: #73BB17
+						border-radius: 50%
+						position: absolute
+					.btn_task
+						span 
+							width: 9px
+							height: 9px
+							background: #9A9A9A
+							border-radius: 50%
+							margin: 0 1px
+						@media screen and (max-width: 405px)
+							position: absolute
+							right: 4%
+					.table_indicator
+						margin-left: 13%
+						@media screen and (max-width: 992px)
+							margin-left: 6%
+						@media screen and (max-width: 768px)
+							margin-left: 9%
+						@media screen and (max-width: 440px)
+							margin-left: 11%
+		.card_left
+			min-width: 40%
+			@media screen and (max-width: 992px)
+				width: 100%
+			table
+				th
+					width: 50%
+			.in_progress
+				.play_pause
+					position: relative
+					width: 18px
+					&:before, &:after 
+						content: ' '
+						position: absolute
+						bottom: -1px
+						display: block 
+						width: 7px
+						height: 20px
+						background: #9A9A9A
+					&:before 
+						left: 0
+					&:after 
+						right: 0
+				.stop_button
+					position: relative
+					border: 1px solid #B52D0F
+					width: 20px
+					height: 20px
+	.card_body_dashboard
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 57%
+		@media screen and (max-width: 992px)
+			position: relative
+			width: 100%
+		table 
+			font-weight: bold
+.table_modal
+	@media screen and (max-width: 425px)
+		padding: 0!important
+
+//----------------------------private spam
+
+select
+	appearance: none
+	background: url('../img/vector_select.svg') 0 0 no-repeat
+	background-position: 96%
+
+//----------------------------templates
+
+.card_group_templates 
+	margin-bottom: 25%
+	width: 35%
+	padding: 47px 22px
+	@media screen and (max-width: 992px)
+		width: 100%
+		margin-bottom: 0
+.random_text
+	background: #2f2f2f
+.area_random 
+	font-size: 14px
+.but_hover 
+	position: relative
+	&:hover
+		&:after 
+			content: ' '
+			border-bottom: 1px solid
+			display: block
+			position: absolute
+.but_hover_new_people
+	width: auto
+	margin: 0 auto
+	display: block
+	&:hover
+		&:after
+			width: 88%
+	@media screen and (max-width: 992px)
+		margin-top: 30px
+.but_hover_2 
+	width: auto
+	&:hover
+		&:after
+			width: 92%
+.but_hover_edit
+	width: auto
+	&:hover
+		&:after
+			width: 80%
+.but_hover_remove
+	width: auto
+	&:hover
+		&:after
+			width: 88%
+.but_hover_task
+	width: auto
+	&:hover
+		&:after
+			width: 88%
+.card_contact 
+	width: 50%
+	margin: 10% auto
+	@media screen and (max-width: 992px)
+		width: 100%
+.form_upload_file
+	display: block
+.form_upload_another_file, .box_statistics, .private_message_box, 
+.form_private_peoples, 
+.current_task_save_people, 
+.nav_2, 
+.tab-content_2, 
+.box_file_attachments,  
+.action_form, 
+.card_form_new, 
+.nav_private_message
+	display: none
+.btn_form_account_1
+	margin-top: 229px
+.btn_form_account_modal
+	margin-top: 20px
+.modal_1
+	top: 10%
+.modal-header
+	padding-left: 25px
+	padding-top: 26px
+.modal-body
+	min-height: 350px
+.btn_form_account_user 
+	margin-top: 330px
+.btn_peoples
+	position: absolute
+	bottom: 4%
+	left: 0
+	right: 0
+.but_hover_new_people 
+	position: absolute
+	bottom: 17%
+	left: 0
+	right: 0
+.button_template_new, .but_hover_1 
+	position: absolute
+	&:hover
+		&:after 
+			content: ' '
+			border-bottom: 1px solid
+			display: block
+			position: absolute
+			width: 74%
+			left: 0
+			right: 0
+			margin: auto
+.button_template_new, .but_hover_1 
+	left: 0
+	right: 0
+	margin: auto
+	width: 50%
+.button_template_new
+	bottom: 4%
+.but_hover_1	
+	bottom: -3%
+.btn-group 
+	border: 1px solid #9A9A9A
+	width: 87%
+	height: 26px
+	border-radius: 5px
+	.dropdown-toggle::after 
+		right: 3%
+		bottom: 26%
+		border: none
+		position: absolute
+		background: url('../img/vector_select.svg') 0 0 no-repeat
+		width: 16px 
+		height: 9px  
+.form-control 
+	background-color: #424242
+	color: $color_white
+	border: 1px solid #303030
+	&:focus 
+		background-color: #424242
+		color: $color_white
+.dropdown-menu 
+	background-color: transparent
+	.dropdown-item:hover
+		background-color: #2a282f
+
+
+#fl_inp, #fl_inp_2 
+	display: none
+.fl_upld label 
+	cursor: pointer
+	color: #36c
+	font-weight: bold
+	transition: 1s
+	&:hover 
+		color: #f00
+#fl_nm 
+	margin-left: 50px
+	color: #f00
+	@media screen and (max-width: 390px)
+		margin-left: 10px
+.upload_button_file
+	position: absolute
+	bottom: -56%
+	width: 43%
+	margin: auto
+	left: 0
+	right: 0
+	@media screen and (max-width: 390px)
+		bottom: -34%
+label[for="fl_inp_2"]
+	display: none
+	margin-left: 40px
+	@media screen and (max-width: 390px)
+		margin-left: 10px
+
+.input-placeholder 
+	position: relative
+
+.input-placeholder input:valid + .placeholder
+	display: none
+.form_task_control
+	background: transparent
+	border: 0
+.placeholder, .placeholder_input_current_task
+	position: absolute
+	pointer-events: none
+	top: 0
+	bottom: 0
+	height: 25px
+	margin: auto
+.placeholder
+	color: #ccc
+	left: 10px
+	@media screen and (max-width: 390px)
+		text-overflow: ellipsis
+		width: 205px
+		overflow: hidden
+		white-space: nowrap
+.placeholder_input_current_task	
+	overflow: hidden
+	text-overflow: ellipsis
+	white-space: nowrap
+	width: 160px
+	@media screen and (max-width: 410px)
+		width: 117px
+
+
+
+
+
+
+	

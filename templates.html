@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Templates</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/S_logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Discord Soft
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item pl-2 pr-2">
+            <a class="nav-link" href="index.html">Dashboard</a>
+          </li>
+          <li class="nav-item pl-2 pr-2">
+            <a class="nav-link" href="accounts.html">Accounts</a>
+          </li>
+          <li class="nav-item pl-2 pr-2">
+            <a class="nav-link" href="group_spam_page.html">Group spam</a>
+          </li>
+          <li class="nav-item pl-2 pr-2">
+            <a class="nav-link" href="private_spam.html">Private spam</a>
+          </li>
+          <li class="nav-item pl-2 pr-2">
+            <a class="nav-link" href="templates.html">Templates</a>
+          </li>
+          <li class="nav-item pl-2 pr-2">
+            <a class="nav-link" href="contact_us.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <ul class="nav nav-tabs justify-content-center border-0 pt-3 pb-3 mb-1">
+      <li class="nav-item">
+        <a class="nav-link border-0 active">All templates</a>
+      </li>
+    </ul>
+
+    <!-- ---------------------------------- -->
+
+    <div class="container">
+      <div class="row justify-content-between pl-3 pr-3">
+        <div class="card card_group_templates mt-4">
+          <div class="card-body p-0">
+            <div class="d-flex justify-content-between template_clone_1 pt-1">
+              <div class="d-flex"><dt>Test template</dt></div>
+              <div>
+                <button type="button" class="border-0 but_hover but_hover_edit bg-transparent text-primary btn_example_form_templates"><dt>Edit</dt></button>
+                <button type="reset" class="border-0 but_hover but_hover_remove bg-transparent text-danger"><dt>Remove</dt></button>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between template_clone pt-1">
+              <div class="d-flex"><dt>Test template 2</dt></div>
+              <div>
+                <button type="button" class="border-0 but_hover but_hover_edit bg-transparent text-primary btn_new_form_templates"><dt>Edit</dt></button>
+                <button type="reset" class="border-0 but_hover but_hover_remove  bg-transparent text-danger"><dt>Remove</dt></button>
+              </div>
+            </div>
+            <button type="button" class="btn but_hover border-0 bg-transparent text-success button_template_new"><dt>Add new template</dt></button>
+          </div>
+        </div>
+        <div class="card card_left card_form_example mt-4 pl-3 pr-3 pt-4 pb-4">
+          <p class="text-muted pl-4 pr-4">Template have random text function. You can use this like in <br>example:</p>
+          <form action="!#" class="form_new">
+            <div class="form-group">
+              <div class="input-placeholder">
+                <input type="text" class="form-control" required>
+                <div class="placeholder">
+                    Your text <span class="text-success">$Random(One|Two)</span> text next
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput"><p class="text-muted pl-4">After this code someone users will take messsge</p></label>
+              <div class="input-placeholder">
+                <input type="text" id="formGroupExampleInput" class="form-control" required>
+                <div class="placeholder">
+                    Your text <span class="text-success">One</span> text next
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput"><p class="text-muted pl-4">Another random user will take message</p></label>
+              <div class="input-placeholder">
+                <input type="text" id="formGroupExampleInput" class="form-control" required>
+                <div class="placeholder">
+                    Your text <span class="text-success">Two</span> text next
+                </div>
+              </div>
+            </div>
+            <p class="text-muted mb-3 mt-3 pl-4">You can use many parameters for Random function</p>
+            <div class="form-group text-muted area_random">
+              <label for="exampleFormControlTextarea1" class="mb-1"><strong>Text:</strong></label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="resize: none"></textarea>
+              <small id="emailHelp" class="form-text text-muted">Can be empty if message have another content</small>
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn but_hover but_hover_2 border-0 bg-transparent btn_add_attachments text-primary pl-0 mt-3" data-toggle="modal" data-target="#exampleModal">
+              Add attachments
+            </button>
+            <!-- Modal -->
+            <div class="modal modal_1 fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content card">
+                  <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="tab-pane current_task current_task_upload_file" style="position: relative;" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                      <div class="card-body">
+                        <form action="!#">
+                          <p class="mb-0">File must have csv extension</p>
+                          <a href="!#" class="button">Download sample file</a>
+                          <div class="form-group form_upload_file mt-5">
+                            <div class="d-flex">
+                              <div class="fl_upld d-flex">
+                                <label for="fl_inp">
+                                  <input id="fl_inp" type="file" name="file">Upload File
+                                </label>
+                                <div id="fl_nm"></div>
+                                <label for="fl_inp_2">
+                                  <input id="fl_inp_2" type="file" name="file">Upload another File
+                                </label>
+                                <button type="submit" class="btn btn_form_account btn_form_account_1 upload_button_file">Save</button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn_form_account"><dt>Save</dt></button>
+          </form>
+        </div>
+        <div class="card card_left card_form_new mt-4 pl-3 pr-3 pt-4 pb-4">
+          <p class="text-muted pl-4 pr-4">Template have random text function. You can use this like in <br>example:</p>
+          <form action="!#" class="form_new">
+            <div class="form-group">
+              <div class="input-placeholder">
+                <input type="text" class="form-control" required>
+                <div class="placeholder">
+                    Your text <span class="text-success">$Random(One|Two)</span> text next
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput"><p class="text-muted pl-4">After this code someone users will take messsge</p></label>
+              <div class="input-placeholder">
+                <input type="text" id="formGroupExampleInput" class="form-control" required>
+                <div class="placeholder">
+                    Your text <span class="text-success">One</span> text next
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput"><p class="text-muted pl-4">Another random user will take message</p></label>
+              <div class="input-placeholder">
+                <input type="text" id="formGroupExampleInput" class="form-control" required>
+                <div class="placeholder">
+                    Your text <span class="text-success">Two</span> text next
+                </div>
+              </div>
+            </div>
+            <p class="text-muted mb-3 mt-3 pl-4">You can use many parameters for Random function</p>
+            <div class="form-group text-muted area_random">
+              <label for="exampleFormControlTextarea1" class="mb-1"><strong>Text:</strong></label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="resize: none"></textarea>
+              <small id="emailHelp" class="form-text text-muted">Can be empty if message have another content</small>
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn but_hover but_hover_2 border-0 bg-transparent btn_add_attachments text-primary pl-0 mt-3" data-toggle="modal" data-target="#exampleModal">
+              Add attachments
+            </button>
+            <!-- Modal -->
+            <div class="modal modal_1 fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content card">
+                  <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="tab-pane current_task current_task_upload_file" style="position: relative;" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                      <div class="card-body">
+                        <form action="!#">
+                          <p class="mb-0">File must have csv extension</p>
+                          <a href="!#" class="button">Download sample file</a>
+                          <div class="form-group form_upload_file mt-5">
+                            <div class="d-flex">
+                              <div class="fl_upld d-flex">
+                                <label for="fl_inp">
+                                  <input id="fl_inp" type="file" name="file">Upload File
+                                </label>
+                                <div id="fl_nm"></div>
+                                <label for="fl_inp_2">
+                                  <input id="fl_inp_2" type="file" name="file">Upload another File
+                                </label>
+                                <button type="submit" class="btn btn_form_account btn_form_account_1 upload_button_file">Save</button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn_form_account"><dt>Save</dt></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

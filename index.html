@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-base.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/csschart.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/S_logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Discord Soft
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item pl-2 pr-2">
+            <a class="nav-link" href="index.html">Dashboard</a>
+          </li>
+          <li class="nav-item pl-2 pr-2">
+            <a class="nav-link" href="accounts.html">Accounts</a>
+          </li>
+          <li class="nav-item pl-2 pr-2">
+            <a class="nav-link" href="group_spam_page.html">Group spam</a>
+          </li>
+          <li class="nav-item pl-2 pr-2">
+            <a class="nav-link" href="private_spam.html">Private spam</a>
+          </li>
+          <li class="nav-item pl-2 pr-2">
+            <a class="nav-link" href="templates.html">Templates</a>
+          </li>
+          <li class="nav-item pl-2 pr-2">
+            <a class="nav-link" href="contact_us.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <ul class="nav nav-tabs justify-content-center border-0 pt-3 pb-3" id="myTab" role="tablist">
+      <li class="nav-item curent_button_1">
+        <a class="nav-link nav-link_1 border-0 active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="All Accounts" aria-selected="true">All Statistic</a>
+      </li>
+      <li class="nav-item curent_button_2">
+        <a class="nav-link nav-link_2 border-0" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Current Task</a>
+      </li>
+    </ul>
+
+    <!-- ---------------------------------- -->
+    
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="container card card_chard pt-4">
+          <div class="box_data">
+            <img src="img/vector_calendar.svg" alt="" class="pl-3">
+            <div class="d-flex align-items-center select_data">
+              <select class="form-control mr-3 pt-0 pb-0" id="formGroupExampleInput">
+                <option value="1">25 Jan 2019</option>
+                <option value="2">25 Jan 2019</option>
+                <option value="3">25 Jan 2019</option>
+                <option value="4">25 Jan 2019</option>
+                <option value="5">25 Jan 2019</option>
+                <option value="6">25 Jan 2019</option>
+                <option value="7">25 Jan 2019</option>
+                <option value="8">25 Jan 2019</option>
+                <option value="9">25 Jan 2019</option>
+                <option value="10">25 Jan 2019</option>
+                <option value="11">25 Jan 2019</option>
+                <option value="12">25 Jan 2019</option>
+              </select>
+              <p class="console m-0 pt-3">to</p>
+              <select class="form-control ml-3 pt-0 pb-0" id="formGroupExampleInput">
+                <option value="1">25 Jan 2019</option>
+                <option value="2">25 Jan 2019</option>
+                <option value="3">25 Jan 2019</option>
+                <option value="4">25 Jan 2019</option>
+                <option value="5">25 Jan 2019</option>
+                <option value="6">25 Jan 2019</option>
+                <option value="7">25 Jan 2019</option>
+                <option value="8">25 Jan 2019</option>
+                <option value="9">25 Jan 2019</option>
+                <option value="10">25 Jan 2019</option>
+                <option value="11">25 Jan 2019</option>
+                <option value="12">25 Jan 2019</option>
+              </select>
+            </div>
+            <div class="d-flex align-items-center send_messages text-white">
+              Sent messages
+            </div>
+          </div>
+          <ul class="yAxis">
+            <li>100</li>
+            <li>90</li>
+            <li>80</li>
+            <li>70</li>
+            <li>60</li>
+            <li>50</li>
+            <li>40</li>
+            <li>30</li>
+            <li>20</li>
+            <li>10</li>
+          </ul>
+          <dl id="csschart">
+            <dt>Mon</dt>
+            <dd class="sub p30" ><span><b>36</b></span></dd>
+            <dt>Tue</dt>
+            <dd class="sub p35"><span><b>36</b></span></dd> 
+            <dt>Wed</dt>
+            <dd class="sub p21"><span><b>51</b></span></dd> 
+            <dt>Thu</dt>
+            <dd class="sub p30" ><span><b>36</b></span></dd>
+            <dt>Fri</dt>
+            <dd class="sub p15" ><span><b>36</b></span></dd>
+            <dt>Sat</dt>
+            <dd class="sub p71" ><span><b>36</b></span></dd>
+            <dt>Sun</dt>
+            <dd class="sub p53" ><span><b>36</b></span></dd>
+            <dt>Mon</dt>
+            <dd class="sub p37" ><span><b>36</b></span></dd>
+            <dt>Tue</dt>
+            <dd class="sub p28" ><span><b>36</b></span></dd>
+            <dt>Wed</dt>
+            <dd class="sub p30" ><span><b>36</b></span></dd>
+            <dt>Thu</dt>
+            <dd class="sub p50" ><span><b>36</b></span></dd>
+            <dt>Fri</dt>
+            <dd class="sub p40" ><span><b>36</b></span></dd>
+          </dl>
+          <ul class="xAxis">
+            <li>Mon</li>
+            <li>Tue</li>
+            <li>Wed</li>
+            <li>Thu</li>
+            <li>Fri</li>
+            <li>Sat</li>
+            <li>Sun</li>
+            <li>Mon</li>
+            <li>Tue</li>
+            <li>Wed</li>
+            <li>Thu</li>
+            <li>Fri</li>
+          </ul>
+        </div>
+        <div class="container card card_chard pt-4">
+          <div class="row d-flex box_data">
+            <div class="col-lg-4 mt_mobile">
+              <p class="pl-5 text-white"><strong>Accounts</strong></p>
+              <div class="d-flex box_chart_accounts">
+                <input class="knob" data-width="150" data-min="0" data-max="8" data-angleOffset="90"  value="1" data-readOnly=true>
+              </div>
+              <div class="box_color_chart">
+                <div class="active_color text-white pb-3">
+                  Active
+                </div>
+                <div class="banned_color text-white">
+                  Banned
+                </div>
+              </div>
+              <div class="d-flex justify-content-between percent_box percent_box_1">
+                <div class="active_statistic text-white">
+                  8
+                </div>
+                <div class="banned_statistic text-white">
+                  1
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mt_mobile">
+              <p class="pl-4 text-white"><strong>Message sending</strong></p>
+              <div class="d-flex box_chart_message">
+                <input class="knob" data-width="150" data-min="0" data-max="500" data-angleOffset="90" data-displayPrevious=true value="50" data-readOnly=true>
+              </div>
+              <div class="box_color_chart box_color_chart_2">
+                <div class="active_color text-white pb-3">
+                  Sent
+                </div>
+                <div class="banned_color text-white">
+                  Error
+                </div>
+              </div>
+              <div class="d-flex justify-content-between percent_box percent_box_2">
+                <div class="active_statistic text-white">
+                  500
+                </div>
+                <div class="banned_statistic text-white">
+                  50
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mt_mobile">
+              <p class="pl-4 text-white"><strong>Connection problems</strong></p>
+              <div class="d-flex box_chart_problems">
+                <input class="knob" data-width="150" data-min="0" data-max="43" data-angleOffset="90" data-displayPrevious=true value="0" data-readOnly=true>
+              </div>
+              <div class="box_color_chart box_color_chart_3">
+                <div class="active_color text-white pb-3">
+                  No
+                </div>
+                <div class="banned_color text-white">
+                  Yes
+                </div>
+              </div>
+              <div class="d-flex justify-content-between percent_box percent_box_3">
+                <div class="active_statistic text-white">
+                  43
+                </div>
+                <div class="banned_statistic text-white">
+                  0
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane current_task fade" style="position: relative;" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="card card_dashboard card_group_spam mt-1">
+              <div class="card-body p-0">
+                <div class="group_spam d-flex align-items-center">
+                  <div class="indicator mr-3 ml-3"></div>
+                  <table class="table table_indicator table-borderless">
+                    <thead>
+                      <tr class="text-white">
+                        <th scope="col" class="pb-2">Group spam</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="text-white">
+                        <th scope="row" class="text-white">Progress:</th>
+                        <td><dt>55%</dt></td>
+                      </tr>
+                      <tr class="text-white">
+                        <th scope="row" class="text-white">Accounts:</th>
+                        <td><dt>4</dt></td>
+                      </tr>
+                      <tr class="text-white">
+                        <th scope="row" class="text-white">Status:</th>
+                        <td>
+                          <dt>
+
+                            <div class="input-placeholder">
+                              <input type="text" class="form_task_control" required>
+                              <div class="placeholder_input_current_task bg-transparent border-0 text-success font-weight-bold">
+                                  Progress progress progress
+                              </div>
+                            </div>
+
+
+                          </dt>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <button type="button" class="btn_task mr-2 d-flex border-0 bg-transparent">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <div class="group_spam d-flex align-items-center">
+                  <div class="indicator bg-warning mr-3 ml-3"></div>
+                  <table class="table table_indicator table-borderless">
+                    <thead>
+                      <tr class="text-white">
+                        <th scope="col" class="pb-2">Private spam</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="text-white">
+                        <th scope="row" class="text-white">Progress:</th>
+                        <td><dt>55%</dt></td>
+                      </tr>
+                      <tr class="text-white">
+                        <th scope="row" class="text-white">Accounts:</th>
+                        <td><dt>4</dt></td>
+                      </tr>
+                      <tr class="text-white">
+                        <th scope="row" class="text-white">Status:</th>
+                        <td>
+                          <dt>
+                            <div class="input-placeholder">
+                              <input type="text" class="form_task_control" required>
+                              <div class="placeholder_input_current_task bg-transparent border-0 text-warning font-weight-bold">
+                                  Pause
+                              </div>
+                            </div>
+                          </dt>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <button type="button" class="btn_task mr-2 d-flex border-0 bg-transparent">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <div class="group_spam d-flex align-items-center">
+                  <div class="indicator bg-danger mr-3 ml-3"></div>
+                  <table class="table table_indicator table-borderless">
+                    <thead>
+                      <tr class="text-white">
+                        <th scope="col" class="pb-2">Private spam</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="text-white">
+                        <th scope="row" class="text-white">Progress:</th>
+                        <td><dt>55%</dt></td>
+                      </tr>
+                      <tr class="text-white">
+                        <th scope="row" class="text-white">Accounts:</th>
+                        <td><dt>4</dt></td>
+                      </tr>
+                      <tr class="text-white">
+                        <th scope="row" class="text-white">Status:</th>
+                        <td>
+                          <dt>
+                            <div class="input-placeholder">
+                              <input type="text" class="form_task_control" required>
+                              <div class="placeholder_input_current_task bg-transparent border-0 text-danger font-weight-bold">
+                                  Progress with errors errors
+                              </div>
+                            </div>
+                          </dt>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <button type="button" class="btn_task mr-2 d-flex border-0 bg-transparent">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card card_dashboard card_left mt-1 p-4">
+              <h6 class="card-title text-white text-center pb-2"><dt>Group spam</dt></h6>
+              <div class="card-body p-0">
+                <div class="group_spam d-flex align-items-center">
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr class="text-white">
+                        <th scope="col" class="pb-2">Groups:</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="text-white">
+                        <th scope="row" class="text-white">List:</th>
+                        <td><a href="!#"><dt>View</dt></a></td>
+                      </tr>
+                      <tr class="text-white">
+                        <th scope="row" class="text-white">Count:</th>
+                        <td><dt>8</dt></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <div class="group_spam d-flex align-items-center">
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr class="text-white">
+                        <th scope="col" class="pb-2">Accounts:</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="text-white">
+                        <th scope="row" class="text-white">List:</th>
+                        <td><a href="!#"><dt>View</dt></a></td>
+                      </tr>
+                      <tr class="text-white">
+                        <th scope="row" class="text-white">Count:</th>
+                        <td><dt>4</dt></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <div class="group_spam d-flex align-items-center">
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr class="text-white">
+                        <th scope="col" class="pb-2">Progress:</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="text-white">
+                        <th scope="row" class="text-white">Sent messages:</th>
+                        <td><dt>40/129</dt></td>
+                      </tr>
+                      <tr class="text-white">
+                        <th scope="row" class="text-white">Sent groups:</th>
+                        <td><dt>2/8</dt></td>
+                      </tr>
+                      <tr class="text-white">
+                        <th scope="row" class="text-white">Sent groups list:</th>
+                        <td><a href="!#"><dt>View</dt></a></td>
+                      </tr>
+                      <tr class="text-white">
+                        <th scope="row" class="text-white">Sent channels list:</th>
+                        <td><a href="!#"><dt>View</dt></a></td>
+                      </tr>
+                      <tr class="text-white">
+                        <th scope="row" class="text-white">Errors messages: </th>
+                        <td><dt>0</dt></td>
+                      </tr>
+                      <tr class="text-white">
+                        <th scope="row" class="text-white">Errors list:</th>
+                        <td><a href="!#"><dt>View</dt></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <div class="group_spam d-flex align-items-center">
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr class="text-white">
+                        <th scope="col" class="pb-2">Information:</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="text-white">
+                        <th scope="row" class="text-white">Date started:</th>
+                        <td><dt>10.10.2020 10:30pm</dt></td>
+                      </tr>
+                      <tr class="text-white">
+                        <th scope="row" class="text-white">Work time:</th>
+                        <td><dt>1h 2m 30s</dt></td>
+                      </tr>
+                      <tr class="text-white">
+                        <th scope="row" class="text-white">Connect problems:</th>
+                        <td><dt>No</dt></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="in_progress text-center">
+                <h6 class="card-title text-white text-success pb-2"><dt>In progress</dt></h6>
+                <button class="play_pause border-0 bg-transparent mr-5">
+                </button>
+                <button class="stop_button bg-transparent ml-5"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container" style="position: relative">
+          <div class="card mt-1 card_dashboard card_body_dashboard">
+            <div class="card-body pr-0 pl-0">
+              <h6 class="card-title text-white text-center pb-2"><dt>Groups</dt></h6>
+              <table class="table table-striped table-borderless text-center">
+                <thead>
+                  <tr class="text-white">
+                    <th scope="col">Group name</th>
+                    <th scope="col">Channels count</th>
+                    <th scope="col">Errors count</th>
+                    <th scope="col">Message progress</th>
+                  </tr>
+                </thead>
+                <tbody class="text-white">
+                  <tr>
+                    <td>Funny pics</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>100%</td>
+                  </tr>
+                  <tr>
+                    <td>Funny pics</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>100%</td>
+                  </tr>
+                  <tr>
+                    <td>Funny pics</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>100%</td>
+                  </tr>
+                  <tr>
+                    <td>Funny pics</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>100%</td> 
+                  </tr>
+                  <tr>
+                    <td>Funny pics</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>100%</td>
+                  </tr>
+                  <tr>
+                    <td>Funny pics</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>100%</td>
+                  </tr>
+                </tbody>
+              </table> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/jquery.knob.js"></script>
+    <script src="js/my_knob.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Private spam</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/S_logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Discord Soft
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item pl-2 pr-2">
+            <a class="nav-link" href="index.html">Dashboard</a>
+          </li>
+          <li class="nav-item pl-2 pr-2">
+            <a class="nav-link" href="accounts.html">Accounts</a>
+          </li>
+          <li class="nav-item pl-2 pr-2">
+            <a class="nav-link" href="group_spam_page.html">Group spam</a>
+          </li>
+          <li class="nav-item pl-2 pr-2">
+            <a class="nav-link" href="private_spam.html">Private spam</a>
+          </li>
+          <li class="nav-item pl-2 pr-2">
+            <a class="nav-link" href="templates.html">Templates</a>
+          </li>
+          <li class="nav-item pl-2 pr-2">
+            <a class="nav-link" href="contact_us.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <ul class="nav nav-tabs justify-content-center border-0 pt-3 pb-3 mb-1">
+      <li class="nav-item">
+        <a class="nav-link border-0 active">Add Spam</a>
+      </li>
+    </ul>
+
+    <!-- ---------------------------------- -->
+
+    <div class="container">
+      <div class="tab-content">
+        <div class="tab-pane fade show active">
+          <div class="row justify-content-between">
+            <div class="col-lg-4">
+              <div class="card mt-4 mb-4">
+                <div class="card-body">
+                  <form action="!#">
+                    <div class="form-group">
+                      <label for="formGroupExampleInput"><dt>Spam title:</dt></label>
+                      <input type="text" class="form-control" id="formGroupExampleInput">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput"><dt>Type:</dt></label>
+                      <select class="trigger form-control" id="formGroupExampleInput">
+                        <option value="1">Group members</option>
+                        <option value="2" id="private_mesage_option">Private message</option>
+                      </select>
+                    </div>
+                    <div class="group_members_box">
+                      <div class="d-flex">
+                      <span style="width: 40%"><dt>Groups:</dt></span>
+                      <button type="button" class="btn p-0 but_hover but_hover_2 text-primary add_privat_group"><dt>Add</dt></button>
+                    </div>
+                      <div class="d-flex">
+                        <span style="width: 40%"><dt>Message:</dt></span>
+                        <button type="button" class="btn p-0 but_hover but_hover_2 text-primary button_message_privat_groups"><dt>Add</dt></button>
+                      </div>
+                      <button type="button" class="btn btn_form_account"><dt>Add Spam</dt></button>
+                    </div>
+                    <div class="private_message_box">
+                      <div class="d-flex">
+                      <span style="width: 40%"><dt>Peoples:</dt></span>
+                      <button type="button" class="btn p-0 but_hover but_hover_2 text-primary add_people_private"><dt>Add</dt></button>
+                    </div>
+                      <div class="d-flex">
+                        <span style="width: 40%"><dt>Message:</dt></span>
+                        <button type="button" class="btn p-0 but_hover but_hover_2 text-primary button_message_people_private"><dt>Add</dt></button>
+                      </div>
+                      <button type="button" class="btn btn_form_account"><dt>Add Spam</dt></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 card_group_page">
+              <div class="card mt-4">
+                <ul class="nav nav_group_members nav-tabs justify-content-center border-0 pt-2 pb-2 mb-1" id="myTab" role="tablist">
+                  <li class="nav-item page_group page_group_1 page_group_spam text-center">
+                    <a class="nav-link border-0 active" id="home-tab" data-toggle="tab" href="#page_group_one" role="tab" aria-controls="All Accounts" aria-selected="true">From list</a>
+                  </li>
+                  <li class="nav-item page_group page_group_private_button page_group_private_button_1 text-center">
+                    <a class="nav-link border-0" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">From file</a>
+                  </li>
+                </ul>
+                <ul class="nav nav_private_message nav-tabs justify-content-center border-0 pt-2 pb-2 mb-1" id="myTab" role="tablist">
+                  <li class="nav-item page_group page_group_1 page_private_spam text-center">
+                    <a class="nav-link border-0 active" id="home-tab" data-toggle="tab" href="#page_group_one_1" role="tab" aria-controls="All Accounts" aria-selected="true">From list</a>
+                  </li>
+                  <li class="nav-item page_group page_group_private_button page_group_private_button_2 text-center">
+                    <a class="nav-link border-0" id="profile-tab" data-toggle="tab" href="#profile_1" role="tab" aria-controls="profile" aria-selected="false">From file</a>
+                  </li>
+                </ul>
+                <div class="container">
+                  <div class="tab-content tab_content_private_1" id="myTabContent">
+                    <div class="tab-pane fade show active" id="page_group_one" role="tabpanel" aria-labelledby="home-tab">
+                      <div class="card-body form_group_messages">
+                        <form action="!#">
+                          <div class="form-group">
+                            <label for="formGroupExampleInput">Group link:</label>
+                            <input type="text" class="form-control mb-5" id="formGroupExampleInput">
+                          </div>
+                          <div class="form-group">
+                            <label for="formGroupExampleInput">Channels:</label>
+                            <input type="text" class="form-control mt-3 mb-3" id="formGroupExampleInput">
+                            <input type="text" class="form-control add_chanels_active mb-3" id="formGroupExampleInput">
+                            <button type="button" class="btn pl-0 but_hover but_hover_2 but_hover_channels text-primary">Add channel</button>
+                          </div>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn_form_account" data-toggle="modal" data-target="#exampleModalLong">
+                            <dt>Add Group</dt>
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content card">
+                                <div class="modal-header border-0">
+                                  <p class="modal-title" id="exampleModalLongTitle"><strong>Exist groups list:</strong></p>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <table class="table table-borderless table_clone_1">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col" class="text-center table_modal text-white">Name</th>
+                                        <th scope="col" class="text-center table_modal text-white">Channels count:</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td class="text-muted table_modal">SuperGroup11</td>
+                                        <td class="text-muted table_modal text-center">9</td>
+                                        <td class="text-right table_modal">
+                                          <!-- Button trigger modal -->
+                                          <button type="button" class="btn p-0 but_hover but_hover_2 text-primary add_group_edit_channels" data-toggle="modal" data-target="#staticBackdrop">
+                                            Edit
+                                          </button>
+                                          <!-- Modal -->
+                                          <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                              <div class="modal-content card">
+                                                <div class="modal-header border-0">
+                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                  </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  <form action="!#" class="form_group_messages">
+                                                    <div class="form-group">
+                                                      <label for="formGroupExampleInput" class="float-left">Group link:</label>
+                                                      <input type="text" class="form-control mb-5" id="formGroupExampleInput">
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label for="formGroupExampleInput" class="float-left">Channels:</label>
+                                                      <input type="text" class="form-control mt-3 mb-3" id="formGroupExampleInput">
+                                                      <input type="text" class="form-control add_modal_active mb-3" id="formGroupExampleInput">
+                                                      <button type="button" class="btn pl-0 but_hover but_hover_2 but_modal_channels text-primary float-left">Add channel</button>
+                                                    </div>
+                                                    <button type="submit" class="btn btn_form_account btn_form_account_1"><dt>Save</dt></button>
+                                                  </form>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td class="text-right table_modal">
+                                          <button type="reset" class="border-0 but_hover but_hover_remove but_remove_table bg-transparent text-danger">Remove</button>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <button type="button" class="btn but_hover but_hover_1 btn_add_group_1 border-0 bg-transparent text-success">Add new group</button>
+                                </div>
+                                <div class="modal-footer d-block border-0 pb-4">
+                                  <button type="submit" class="btn btn_form_account btn_form_account_modal"><dt>Save</dt></button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="card-body form_private_peoples">
+                        <form action="!#">
+                          <div class="form-group">
+                            <label for="formGroupExampleInput"><dt>Username:</dt></label>
+                            <input type="text" class="form-control mb-5" id="formGroupExampleInput">
+                          </div>
+                          <button type="button" class="btn btn_form_account btn_form_account_user"><dt>Add User</dt></button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-content tab_content_private_2" id="myTabContent">
+                    <div class="tab-pane current_task fade box_file_attachments" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                      <div class="card-body action_form_private" style="height: 470px">
+                        <form action="!#">
+                          <div class="form-group text-muted area_random">
+                            <label for="exampleFormControlTextarea1" class="mb-1"><strong>Text:</strong></label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="resize: none"></textarea>
+                            <small id="emailHelp" class="form-text text-muted">Can be empty if message have another content</small>
+                          </div>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn but_hover but_hover_2 border-0 bg-transparent text-primary pl-0 mt-3 btn_add_attachments" data-toggle="modal" data-target="#exampleModalCenter">
+                            Add attachments
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal modal_1 fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content card">
+                                <div class="modal-header border-0">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="tab-pane current_task" style="position: relative;" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="card-body">
+                                      <form action="!#">
+                                        <p class="mb-0">File must have csv extension</p>
+                                        <a href="!#" class="button">Download sample file</a>
+                                        <div class="form-group form_upload_file mt-5">
+                                          <div class="d-flex">
+                                            <div class="fl_upld d-flex">
+                                              <label for="fl_inp">
+                                                <input id="fl_inp" type="file" name="file">Upload File
+                                              </label>
+                                              <div id="fl_nm"></div>
+                                              <label for="fl_inp_2">
+                                                <input id="fl_inp_2" type="file" name="file">Upload another File
+                                              </label>
+                                              <button type="submit" class="btn btn_form_account btn_form_account_1 upload_button_file">Save</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <button type="button" class="btn btn_form_account btn_form_account_1 upload_button_file" style="bottom: 4%"><dt>Add Message</dt></button>
+                        </form>
+                      </div>
+                      <div class="card-body form_box_file_attachments" style="height: 470px">
+                        <form action="!#">
+                          <p class="mb-0">File must have csv extension</p>
+                          <a href="!#" class="button">Download sample file</a>
+                          <div class="form-group form_upload_file mt-5">
+                            <div class="d-flex">
+                              <div class="fl_upld d-flex">
+                                <label for="fl_inp">
+                                  <input id="fl_inp" type="file" name="file">Upload File
+                                </label>
+                                <div id="fl_nm"></div>
+                                <label for="fl_inp_2">
+                                  <input id="fl_inp_2" type="file" name="file">Upload another File
+                                </label>
+                                <button type="submit" class="btn btn_form_account btn_form_account_1 upload_button_file" style="bottom: 4%">Save</button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="current_task current_task_save_people" style="position: relative;">
+                      <div class="card-body" style="min-height: 500px; padding-bottom: 48%">
+                        <form action="!#">
+                          <p class="mb-3"><strong>Exist peoples list:</strong></p>
+                          <div class="d-flex justify-content-between block_people pt-1">
+                            <div class="d-flex"><dt>Mark</dt><span class="text-muted">#2121</span></div>
+                            <button type="reset" class="border-0 but_hover but_hover_remove btn_remove_peoples bg-transparent text-danger"><dt>Remove</dt></button> 
+                          </div>
+                          <button type="button" class="btn but_hover but_hover_new_people border-0 bg-transparent text-success"><dt>Add new people</dt></button>
+                          <button type="submit" class="btn btn_form_account btn_peoples"><dt>Save</dt></button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
